@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6f7ff; /* Light blue background color, you can adjust it */
+  }
+
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff3333; /* Christmas red border color */
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff3333; /* Christmas red background color for the button */
+    color: #ffffff; /* White text color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }

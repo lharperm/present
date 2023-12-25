@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descartes Page</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #e6f7ff; /* Light blue background color, you can adjust it */
+    }
+
+    div {
+      text-align: center;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ff3333; /* Christmas red border color */
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    h2 {
+        font-size: 35px;
+        color: #1d892c;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #ff3333; /* Christmas red background color for the button */
+      color: #fff; /* White text color for the button */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Descartes Once Said...</h2>
+    <input type="text" id="descartesPassword" placeholder="">
+    <button id="descartesSubmitButton">Submit</button>
+  </div>
+
+  <script>
+    document.getElementById("descartesSubmitButton").addEventListener("click", function() {
+      // Check if the entered value is "I think therefore I am"
+      var inputValue = document.getElementById("descartesPassword").value.trim();
+      inputValue = inputValue.toLowerCase();
+      if (inputValue === "i think therefore i am") {
+        // Open another new page (replace 'finalPage.html' with the actual page URL)
+        window.location.href = 'final.html';
+      }
+    });
+
+    // Allow pressing Enter key to trigger the button click
+    document.getElementById("descartesPassword").addEventListener("keyup", function(event) {
+      if (event.key === "Enter") {
+        document.getElementById("descartesSubmitButton").click();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+    <input type="password" id="numberInput" placeholder="Try Phone...">
+    <button id="submitButton">Submit</button>
+    
+    <script>
+      document.getElementById("submitButton").addEventListener("click", function() {
+        // Check if the entered value is "5"
+        var inputValue = document.getElementById("numberInput").value.trim();
+        if (inputValue === "416899") {
+          // Open a new page (replace 'yourNewPage.html' with the actual page URL)
+          window.location.href = 'rene.html';
+        }
+      });
+  
+      // Allow pressing Enter key to trigger the button click
+      document.getElementById("numberInput").addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+          document.getElementById("submitButton").click();
+        }
+      });
+    </script>
+  </body>
+</html>
